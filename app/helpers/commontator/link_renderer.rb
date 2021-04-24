@@ -1,4 +1,4 @@
-class Commontator::LinkRenderer < WillPaginate::ActionView::LinkRenderer
+class Commontator::LinkRenderer < WillPaginate::ViewHelpers::LinkRenderer
   protected
 
   def html_container(html)

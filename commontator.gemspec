@@ -7,17 +7,17 @@ require 'commontator/version'
 Gem::Specification.new do |gem|
   gem.name        = 'commontator'
   gem.version     = COMMONTATOR_VERSION
-  gem.authors     = [ 'Dante Soares' ]
-  gem.email       = [ 'dante.m.soares@rice.edu' ]
-  gem.homepage    = 'https://github.com/lml/commontator'
+  gem.authors     = [ 'Dante Soares', 'Martin Streicher' ]
+  gem.email       = [ 'martin.streicher@gadget.conssulting' ]
+  gem.homepage    = 'https://github.com/martinstreicher/commontator'
   gem.license     = 'MIT'
   gem.summary     = 'Allows users to comment on any model in your application.'
   gem.description = 'A Rails engine for comments.'
 
   gem.files = Dir['{app,config,db,lib,vendor}/**/*'] + [ 'MIT-LICENSE', 'README.md' ]
 
-  gem.add_dependency 'rails', '>= 5.2'
-  gem.add_dependency 'will_paginate'
+  gem.add_dependency 'rails', '~> 6.1'
+  gem.add_dependency 'will_paginate', '~> 3.3.0'
 
   gem.add_development_dependency 'jquery-rails'
   gem.add_development_dependency 'sassc-rails'
